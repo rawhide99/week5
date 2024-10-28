@@ -18,7 +18,7 @@ void setup()
     TCCR1B = 0;
     TCCR1B = (1 << WGM12); // Set CTC mode
     OCR1A = 62499;
-    TCCR1B |= (1 << CS12);
+    TCCR1B |= (1 << CS12); // Prescaler to 256
 }
 
 void loop() 
